@@ -3,6 +3,7 @@ import styled, { css, keyframes } from 'styled-components';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Home, Settings, Users, LogOut, Menu } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { CgProductHunt } from 'react-icons/cg';
 
 const fadeIn = keyframes`
   from {
@@ -165,6 +166,7 @@ function Sidebar({ isOpen, closeSidebar }) {
     { path: '/dashboard/inicio', label: 'Inicio', icon: <Home /> },
     { path: '/dashboard/servicios', label: 'Servicios', icon: <Settings /> },
     { path: '/dashboard/nosotros', label: 'Nosotros', icon: <Users /> },
+    { path: '/dashboard/productos', label: 'Productos', icon: <CgProductHunt /> },
   ];
 
   return (

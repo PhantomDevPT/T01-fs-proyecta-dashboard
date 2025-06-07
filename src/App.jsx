@@ -7,6 +7,7 @@ import ServiciosPage from './pages/ServiciosPage';
 import NosotrosPage from './pages/NosotrosPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import { useAuth } from './context/AuthContext';
+import { ProductosPage } from './pages/ProductosPage';
 
 function App() {
   const { isAuthenticated } = useAuth();
@@ -19,6 +20,7 @@ function App() {
         <Route path="inicio" element={<InicioPage />} />
         <Route path="servicios" element={<ServiciosPage />} />
         <Route path="nosotros" element={<NosotrosPage />} />
+        <Route path="productos" element={<ProductosPage />} />
       </Route>
       <Route path="*" element={<Navigate to={isAuthenticated ? "/dashboard" : "/login"} replace />} />
     </Routes>
