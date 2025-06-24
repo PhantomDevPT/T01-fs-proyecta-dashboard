@@ -341,11 +341,11 @@ function Login() {
             </ButtonContainer>
           </LoginForm>
           
-          <FormFooter>
+          {/* <FormFooter>
             Use las credenciales por defecto:<br />
             Email: admin@gmail.com<br />
             Contraseña: admin1234
-          </FormFooter>
+          </FormFooter> */}
         </LoginFormContainer>
       </RightPanel>
     </LoginContainer>

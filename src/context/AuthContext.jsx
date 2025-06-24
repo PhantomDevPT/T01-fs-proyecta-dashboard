@@ -20,7 +20,7 @@ export function AuthProvider({ children }) {
   const login = (email, password) => {
     return new Promise((resolve, reject) => {
       // Check default credentials
-      if (email === 'admin@gmail.com' && password === 'admin1234') {
+      if (email === 'admin@fsproyecta.com' && password === 'ProYecta159.*') {
         const userData = { email, name: 'Admin User' };
         localStorage.setItem('user', JSON.stringify(userData));
         setUser(userData);

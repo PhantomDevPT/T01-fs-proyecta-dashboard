@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost/T01-fs-proyecta-api/public/api";
+// const API_BASE_URL = "http://localhost/T01-fs-proyecta-api/public/api";
+const API_BASE_URL = "https://apifsproyecta.digitaloasistec.com/public/api";
 
 const api = axios.create({
   baseURL: API_BASE_URL,

@@ -160,10 +160,10 @@ function Header({ toggleSidebar }) {
       </div>
       
       <HeaderRight>
-        <IconButton>
+        {/* <IconButton>
           <Bell size={20} />
           <NotificationBadge>2</NotificationBadge>
-        </IconButton>
+        </IconButton> */}
         
         <UserProfile>
           <Avatar>{getInitials(user?.name)}</Avatar>
@@ -173,9 +173,9 @@ function Header({ toggleSidebar }) {
           </UserInfo>
         </UserProfile>
         
-        <IconButton>
+        {/* <IconButton>
           <User size={20} />
-        </IconButton>
+        </IconButton> */}
       </HeaderRight>
     </HeaderContainer>
   );
